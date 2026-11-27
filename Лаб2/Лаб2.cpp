@@ -17,7 +17,7 @@ int main() {
     const double EPS = 1e-9;
     if (a + b <= c + EPS || a + c <= b + EPS || b + c <= a + EPS) {
         cout << "\nТочки не составляют треугольник\n ";
-        return 0;
+        return 1;
     }
 
     if (abs(a - b) < EPS && abs(b - c) < EPS)
