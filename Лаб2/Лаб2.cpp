@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <cmath>
-#include <iomanip>
 using namespace std;
 
 int main() {
@@ -9,11 +8,11 @@ int main() {
 
     cout << "Введите координаты первой точки (x y): "; cin >> x1 >> y1;
     cout << "Введите координаты второй точки (x y): "; cin >> x2 >> y2;
-    cout << "Введите координаты третьей точки (x y): "; cin >> x3 >> y3;
-
+    cout << "Введите координаты третьей точки (x y): "; cin >> x3 >> y3; 
+    /
     a = sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
     b = sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
-    c = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
+    c = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
 
     const double EPS = 1e-9;
     if (a + b <= c + EPS || a + c <= b + EPS || b + c <= a + EPS) {
